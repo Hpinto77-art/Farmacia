@@ -1,0 +1,112 @@
+<h2 class="w-full text-2xl text-center mt-5">Nuestros Servicios</h2>
+<p class="w-full text-2xl text-center mt-5 mb-5">Ofrecemos una amplia gama de servicios para satisfacer tus necesidades de salud y bienestar. Desde la venta de medicamentos hasta análisis clínicos, estamos aquí para ayudarte.</p>
+<div id="accordion-card">
+  <!-- Item 1 -->
+  <h2 id="accordion-card-heading-1">
+    <button 
+      type="button" 
+      (click)="toggleSection(1)"
+      [attr.aria-expanded]="isOpen(1)"
+      aria-controls="accordion-card-body-1"
+      class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 rounded-xl shadow-xs border border-gray-200 hover:text-gray-900 hover:bg-gray-50 gap-3 transition-all duration-300"
+      [class.rounded-b-none]="isOpen(1)"
+      [class.shadow-none]="isOpen(1)">
+      <span>What is Flowbite?</span>
+      <svg 
+        class="w-5 h-5 shrink-0 transition-transform duration-300"
+        [class.rotate-180]="isOpen(1)"
+        aria-hidden="true" 
+        xmlns="http://www.w3.org/2000/svg" 
+        width="24" 
+        height="24" 
+        fill="none" 
+        viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+      </svg>
+    </button>
+  </h2>
+  <div 
+    id="accordion-card-body-1" 
+    [class.hidden]="!isOpen(1)"
+    class="border border-t-0 border-gray-200 rounded-b-xl shadow-xs transition-all duration-300"
+    aria-labelledby="accordion-card-heading-1">
+    <div class="p-4 md:p-5">
+      <p class="mb-2 text-gray-600">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
+      <p class="text-gray-600">Check out this guide to learn how to <a href="#" class="text-blue-600 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
+    </div>
+  </div>
+
+  <!-- Item 2 -->
+  <h2 id="accordion-card-heading-2" class="mt-4">
+    <button 
+      type="button" 
+      (click)="toggleSection(2)"
+      [attr.aria-expanded]="isOpen(2)"
+      aria-controls="accordion-card-body-2"
+      class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 rounded-xl shadow-xs border border-gray-200 hover:text-gray-900 hover:bg-gray-50 gap-3 transition-all duration-300"
+      [class.rounded-b-none]="isOpen(2)"
+      [class.shadow-none]="isOpen(2)">
+      <span>Is there a Figma file available?</span>
+      <svg 
+        class="w-5 h-5 shrink-0 transition-transform duration-300"
+        [class.rotate-180]="isOpen(2)"
+        aria-hidden="true" 
+        xmlns="http://www.w3.org/2000/svg" 
+        width="24" 
+        height="24" 
+        fill="none" 
+        viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+      </svg>
+    </button>
+  </h2>
+  <div 
+    id="accordion-card-body-2" 
+    [class.hidden]="!isOpen(2)"
+    class="border border-t-0 border-gray-200 rounded-b-xl shadow-xs transition-all duration-300"
+    aria-labelledby="accordion-card-heading-2">
+    <div class="p-4 md:p-5">
+      <p class="mb-2 text-gray-600">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+      <p class="text-gray-600">Check out the <a href="#" class="text-blue-600 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
+    </div>
+  </div>
+
+  <!-- Item 3 -->
+  <h2 id="accordion-card-heading-3" class="mt-4">
+    <button 
+      type="button" 
+      (click)="toggleSection(3)"
+      [attr.aria-expanded]="isOpen(3)"
+      aria-controls="accordion-card-body-3"
+      class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-700 rounded-xl shadow-xs border border-gray-200 hover:text-gray-900 hover:bg-gray-50 gap-3 transition-all duration-300"
+      [class.rounded-b-none]="isOpen(3)"
+      [class.shadow-none]="isOpen(3)">
+      <span>What are the differences between Flowbite and Tailwind UI?</span>
+      <svg 
+        class="w-5 h-5 shrink-0 transition-transform duration-300"
+        [class.rotate-180]="isOpen(3)"
+        aria-hidden="true" 
+        xmlns="http://www.w3.org/2000/svg" 
+        width="24" 
+        height="24" 
+        fill="none" 
+        viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/>
+      </svg>
+    </button>
+  </h2>
+  <div 
+    id="accordion-card-body-3" 
+    [class.hidden]="!isOpen(3)"
+    class="border border-t-0 border-gray-200 rounded-b-xl shadow-xs transition-all duration-300"
+    aria-labelledby="accordion-card-heading-3">
+    <div class="p-4 md:p-5">
+      <p class="mb-2 text-gray-600">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product.</p>
+      <p class="mb-2 text-gray-600">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI.</p>
+      <ul class="ps-5 text-gray-600 list-disc">
+        <li><a href="#" class="text-blue-600 hover:underline">Flowbite Pro</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">Tailwind UI</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

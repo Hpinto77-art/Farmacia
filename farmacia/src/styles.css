@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'tailwindcss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-pharma-soft);
+}
+
+@theme {
+  --color-pharma-dark: #0F2C59;
+  --color-pharma-blue: #3A86EF;
+  --color-pharma-soft: #A2D2FF;
+  --color-pharma-ice: #E8F1F5;
+  --color-pharma-bg: #F8FAFC;
+}
